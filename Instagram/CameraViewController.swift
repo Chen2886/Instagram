@@ -27,7 +27,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picture["caption"] = captionTextField.text!
         picture["author"] = PFUser.current()!
         let imageData = imageView.image!.pngData()!
-        let file = PFFileObject(data: imageData)
+        let file = PFFileObject(name: "file.png", data: imageData)
         
         picture["image"] = file
         

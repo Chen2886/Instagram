@@ -48,9 +48,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.caption.text = post["caption"] as! String
         let imageFile = post["image"] as! PFFileObject
         let urlString = URL(string: imageFile.url!)
-        let urlTemp = URL(string: "https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
-        print(urlString)
-        cell.photo.af_setImage(withURL: urlTemp!)
+        print(urlString!)
+        cell.photo.af_setImage(withURL: urlString!)
         return cell
     }
     
