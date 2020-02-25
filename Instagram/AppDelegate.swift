@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://limitless-oasis-08091.herokuapp.com/parse"
             })
         )
-        
         return true
     }
 
